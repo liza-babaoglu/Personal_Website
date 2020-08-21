@@ -1,0 +1,457 @@
+<!><!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Let's do this!">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1”>
+    <title>Liza Babaoglu!</title>
+
+<style>
+
+/*HEADER STARTS */
+    header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  background: #000740;
+  color: white;
+  font-size: 20px;
+  padding-top: 1px;
+  padding-bottom: 0px;
+  z-index: 1;
+  }
+
+  body{
+
+    background-image: url("water.jpg");
+
+    /*background-image: url("https://cdn.pixabay.com/photo/2018/01/03/09/09/book-3057904_1280.png");*/
+    /*background-image: url("https://cdn.pixabay.com/photo/2018/07/17/14/43/books-3544295_1280.jpg");*/
+    /*background-image: url("https://cdn.pixabay.com/photo/2015/12/01/15/43/black-1072366_1280.jpg");*/
+    /*background-image: url("https://cdn.pixabay.com/photo/2016/08/12/03/51/notebook-1587525_1280.jpg");*/
+
+    padding-top: 120px;
+    padding-bottom: 40px;
+    background-size: cover;
+    background-position: -50px 0px;
+    background-repeat: no-repeat;
+
+  }
+
+  img{
+    width:100%;
+    height: auto;
+  }
+
+
+    footer {
+  bottom: 0;
+  width: 100%;
+
+  text-align: center;
+  background: #000740;
+  color: white;
+  font-size: 15px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  }
+
+
+  /*hoverable buttons*/
+
+  .hoverable-buttons{
+    background-color: #333966;
+    margin-top:-20px;
+    width:100%;
+    height:25px;
+  }
+
+  .button {
+  margin-top: -30px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  /*padding: 16px 32px;*/
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 1.0%;
+  /*margin: 4px 2px;*/
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  padding-bottom: 0px;
+  background-color: #dad3ed;
+  width: 140px;
+  overflow-x: hidden;
+  color: black;
+  border: 2px solid #FFFFFF;
+}
+
+.button1:hover {
+  background-color: #000740;
+  color: white;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 8%;
+}
+
+.row{
+ margin-left: 30%;
+}
+
+/* Clearfix (clear floats) shows background */
+.row::after {
+
+  content: "";
+  clear: both;
+  display: table;
+}
+/*
+.glow {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}*/
+
+/*flipping*/
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  /*border: 1px solid #f1f1f1;*/
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-image: linear-gradient(to bottom right, #000740 , #dad3ed);
+  color: white;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #dad3ed;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+#wrapper{
+width: 1200px;
+margin-right: auto;
+margin-left: auto;
+position:relative;
+/*background-color: red;*/
+}
+
+</style>
+</head>
+
+<body style = "background-color: black">
+  <header>
+    <h2>Liza Babaoglu ~
+      <span style = "font-family: fantasy "
+         class="txt-rotate"
+         data-period="2000"
+         data-rotate='[ "listens!", "searches!", "learns!", "innovates!", "leads!", "creates!",
+         "imagines!", "inspires!", "impacts!", "strives!", "commits!" ]'></span>
+    </h2>
+
+    <div class = "hoverable-buttons">
+      <div class="row" style="margin:30px;">
+      <div class="column" style="width:12%">
+        <a href="index.html"><button class="button button1">HOME</button></a>
+      </div>
+      <div class="column" style="width:12%">
+      <a href="Projects.html"><button class="button button1">PROJECTS</button></a>
+    </div>
+      <div class="column" style="width:12%">
+      <a href="Experiences.html"><button class="button button1">EXPERIENCES</button></a>
+    </div>
+      <div class="column" style="width:12%">
+      <a href="Involvement.html"><button class="button button1">INVOLVEMENT</button></a>
+    </div>
+      <div class="column" style="width:12%">
+      <a href="Education.html"><button class="button button1">EDUCATION</button></a>
+    </div>
+      <div class="column" style="width:12%">
+      <a href="Skills.html"><button class="button button1" style="background-color: #000740; color:white">SKILLS</button></a>
+    </div>
+      <div class="column" style="width:12%">
+      <a href="Awards.html"><button class="button button1">AWARDS</button></a>
+    </div>
+      <div class="column" style="width:12%">
+      <a href="Liza_Babaoglu_Resume_JUNE2020.pdf" download="Liza's Resume"><button class="button button1">RESUME</button></a>
+    </div>
+  </div>
+    </div>
+  </header>
+
+<!---#dad3ed--->
+<p style="color:#dad3ed; text-align: center; font-family: cursive; font-size: 40px; margin-top:0px">~ My toolbox... ~</p>
+<div id="wrapper">
+<div class="row">
+<div class="column"> <!--- Technology--->
+<div class="flip-card" style="position: absolute; top:48%; left:605px; width: 250px; height:300px">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1 style="font-family: fantasy; color">Technology</h1>
+    </div>
+    <div class="flip-card-back">
+      <h2>HTML</h2>
+      <h2>CSS</h2>
+      <h2>Xcode</h2>
+      <h2>Fusion360</h2>
+      <h2>3D Printing</h2>
+      <h2>Ultimaker Cura</h2>
+    </div>
+  </div>
+</div>
+</div>
+<div class="column"> <!---programming--->
+<div class="flip-card" style="position: absolute; top:5%; left:25px; height: 390px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1 style="font-family: fantasy">Programming Languages</h1>
+    </div>
+    <div class="flip-card-back">
+      <h2>C</h2>
+      <h2>R</h2>
+      <h2>MATLAB</h2>
+      <h2>Swift</h2>
+      <h2>Python</h2>
+      <h2>JavaScript</h2>
+      <h2>Arduino</h2>
+      <h2>BASIC</h2>
+    </div>
+  </div>
+</div>
+</div>
+<div class="column"> <!---Languages--->
+<div class="flip-card" style="position: absolute; top:48%; left:345px; height: 150px; width: 250px">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1 style="font-family: fantasy">Languages </h1>
+    </div>
+    <div class="flip-card-back">
+      <h2>English</h2>
+      <h2>Armenian</h2>
+      <h2>Turkish</h2>
+    </div>
+  </div>
+</div>
+</div>
+<div class="column"> <!---Technical skills--->
+<div class="flip-card" style="position: absolute; top:0%; left:335px; height: 270px; width: 530px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1 style="font-family: fantasy">Technical Skills</h1>
+    </div>
+    <div class="flip-card-back">
+      <h2 style="line-height: 0px;">Big Data Analysis</h2>
+      <h3 style="line-height: 5px;">Initial and Exploratory Analysis, Models and Predictions</h3>
+      <h2 style="line-height: 50px;">Machine Learning</h2>
+      <h2 style="line-height: 0px">Project Management</h2>
+      <h3 style="line-height: 5px;">Task Management and Task Delegation</h3>
+      <h2  style="line-height: 50px;">Research and Technical Writing </h2>
+      <h2  style="line-height: 0px;">Engineering Design </h2>
+    </div>
+  </div>
+</div>
+</div>
+<div class="column"> <!---Soft skills--->
+<div class="flip-card" style="position: absolute; top:10%; right:5%; height: 530px; left:875px">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1 style="font-family: fantasy">Soft Skills</h1>
+    </div>
+    <div class="flip-card-back">
+      <h2>Teamwork</h2>
+      <h2>Leadership</h2>
+      <h2>Communication</h2>
+      <h2>Presentation</h2>
+      <h2>Entrepreneurship</h2>
+      <h2>Public Speaking</h2>
+      <h2>Creativity</h2>
+      <h2>Critical Thinking</h2>
+      <h2>Empathy</h2>
+      <h2>Conflict Resolution</h2>
+      <h2>Problem Solving</h2>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br><br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br><br>
+<br><br><br>
+<br>
+<br>
+<br>
+<br><br>
+<br><br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+</div>
+
+  <footer>
+    <div class="row">
+    <div class="column">
+      <a target="_blank" href =  "https://www.youtube.com/channel/UCcpqrYyM8MqoEwOElTnfpHA?view_as=subscriber">
+    <img  src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/youtube-512.png"; alt="Youtube icon"; style="width: 50%">
+    </a>
+    </div>
+    <div class="column">
+      <a href =  "mailto: liza.babaoglu@mail.utoronto.ca">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/TK_email_icon.svg/1200px-TK_email_icon.svg.png"; alt="E-mail icon"; style="width: 50%";>
+      </a>
+    </div>
+    <div class="column">
+      <a target="_blank" href =  "https://ca.linkedin.com/in/liza-babaoglu-3506b719a">
+      <img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/linkedin_circle-512.png"; alt="LinkedIn icon"; style="width: 50%";>
+      </a>
+    </div>
+
+    <p style = "margin-right: 30%" > 👩🏻‍💻 Designed and Built by me ☺️</p>
+
+  </div>
+
+  </footer>
+
+
+
+
+
+
+
+
+
+  <script>
+  var TxtRotate = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+  };
+
+  TxtRotate.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+    var that = this;
+    var delta = 300 - Math.random() * 100;
+
+    if (this.isDeleting) { delta /= 2; }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+    }
+
+    setTimeout(function() {
+      that.tick();
+    }, delta);
+  };
+
+  window.onload = function() {
+    var elements = document.getElementsByClassName('txt-rotate');
+    for (var i=0; i<elements.length; i++) {
+      var toRotate = elements[i].getAttribute('data-rotate');
+      var period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+    document.body.appendChild(css);
+  };
+  </script>
+
+
+</body>
+
+
+
+</html>
